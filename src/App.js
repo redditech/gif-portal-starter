@@ -26,8 +26,10 @@ const opts = {
 }
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = 'redditech';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+const BUILDSPACE_TWITTER_HANDLE = '_buildspace';
+const BUILDSPACE_TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 // const TEST_GIFS = [
 //   "https://media.giphy.com/media/RVuNZB864BeVy/giphy.gif",
 //   "https://media.giphy.com/media/oBJ3iITOA7mBG/giphy.gif",
@@ -80,7 +82,7 @@ const App = () => {
   };
 
   const sendGif = async () => {
-    if (inputValue.length ===0) {
+    if (inputValue.length === 0) {
       console.log("No gif link given!");
       return
     }
@@ -238,7 +240,13 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+          >{`built by @${TWITTER_HANDLE} `}
+          </a>
+          <span className="footer-text"> &nbsp;for my project on </span>
+          <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
+          <a className="footer-text" href={BUILDSPACE_TWITTER_LINK} target="_blank" rel="noreferrer">
+            {`@${BUILDSPACE_TWITTER_HANDLE}`}
+          </a>
         </div>
       </div>
     </div>
