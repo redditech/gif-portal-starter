@@ -1,11 +1,10 @@
 [programs.localnet]
-myepicproject = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+myepicproject = "5af9Vm4DsGn33TAvYUfd2A9sCQA2AX8RHwLom5ww6MKj"
 
 [registry]
 url = "https://anchor.projectserum.com"
-
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/Users/nissan/.config/solana/id.json"
 
 [scripts]
